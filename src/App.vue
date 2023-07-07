@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">页面1</router-link>
-    <router-link to="/2">页面2</router-link>
-    <router-link to="/3">页面3</router-link>
+    <router-link to="/">home</router-link>
+    <router-link to="/about">about</router-link>
+    <router-link to="/news">news</router-link>
   </nav>
   <router-view></router-view>
 </template>

@@ -1,5 +1,12 @@
 <template>
-  <div>About</div>
+  <div>
+    About
+    <nav>
+      <router-link to="/about/work">工作經歷</router-link>
+      <router-link to="/about/education">教育經歷</router-link>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 <script>
 export default {};
