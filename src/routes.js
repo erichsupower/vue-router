@@ -1,21 +1,21 @@
-import PageOne from './components/PageOne.vue';
-import PageTwo from './components/PageTwo.vue';
-import PageThree from './components/PageThree.vue';
+import PageHome from './components/PageHome.vue';
+import PageAbout from './components/PageAbout.vue';
+import PageNews from './components/PageNews.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/',
-    component: PageOne,
+    component: PageHome,
   },
   {
-    path: '/2',
-    component: PageTwo,
+    path: '/about',
+    component: PageAbout,
   },
   {
-    path: '/3',
-    component: PageThree,
+    path: '/news',
+    component: PageNews,
   },
 ];
 

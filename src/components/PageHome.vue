@@ -1,5 +1,5 @@
 <template>
-  <div>页面 2</div>
+  <div>Home</div>
 </template>
 <script>
 export default {};
@@ -13,7 +13,7 @@ div {
   display: grid;
   place-items: center;
 
-  background-color: hsl(260deg, 50%, 20%);
+  background-color: hsl(220deg, 50%, 20%);
   font-size: 10vw;
 }
 </style>
