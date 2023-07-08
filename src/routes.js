@@ -18,10 +18,12 @@ const routes = [
       {
         path: 'work',
         component: WorkExperience,
+        meta: { transition: 'fadeAndMove' },
       },
       {
         path: 'education',
         component: EducationExperience,
+        meta: { transition: 'fadeAndMove' },
       },
     ],
   },
