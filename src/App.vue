@@ -4,7 +4,11 @@
     <router-link to="/about">about</router-link>
     <router-link to="/news">news</router-link>
   </nav>
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script>
@@ -46,5 +50,22 @@ nav a {
   font-size: 18px;
   color: white;
   margin-right: 24px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fadeAndMove-enter-active {
+  transition: all 0.4s;
+}
+.fadeAndMove-enter-from {
+  transform: translateY(-10px);
+  opacity: 0;
 }
 </style>

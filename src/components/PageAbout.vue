@@ -5,7 +5,11 @@
       <router-link to="/about/work">工作經歷</router-link>
       <router-link to="/about/education">教育經歷</router-link>
     </nav>
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
