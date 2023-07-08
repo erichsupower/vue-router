@@ -1,6 +1,6 @@
 <template>
   <div>
-    About
+    <h1>About</h1>
     <nav>
       <router-link to="/about/work">工作經歷</router-link>
       <router-link to="/about/education">教育經歷</router-link>
@@ -8,9 +8,11 @@
     <router-view></router-view>
   </div>
 </template>
+
 <script>
 export default {};
 </script>
+
 <style scoped>
 div {
   width: 100vw;
